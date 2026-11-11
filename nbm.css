@@ -137,3 +137,42 @@ footer .wrap>.foot-partner,footer .wrap>.foot-mark{display:inline-block}
 .nbm-s-dark .slide-text{background:none!important}
 @media (max-width:1100px){.nbm-pic-collage{width:36%;left:3%}.nbm-pic-korea{left:6%;height:78%}}
 @media (max-width:860px){.nbm-slide-pic{display:none}}
+
+/* 우리의 가치 — 사랑을 가운데 둔 꽃 모양 (2026-11) */
+.nbm-vwrap{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:center}
+.nbm-vflower{list-style:none;margin:0;padding:0;position:relative;width:100%;aspect-ratio:1;container-type:inline-size}
+.nbm-vflower li{position:absolute;width:36%;aspect-ratio:1;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;mix-blend-mode:multiply}
+.nbm-vflower b{font-family:var(--f-serif);font-weight:700;font-size:5cqw;line-height:1.2;color:var(--ink)}
+.nbm-vflower span{font-size:3.4cqw;color:var(--muted)}
+.nbm-vflower .v2{left:32%;top:0}
+.nbm-vflower .v3{left:62.4%;top:22.1%}
+.nbm-vflower .v4{left:50.8%;top:57.9%}
+.nbm-vflower .v5{left:13.2%;top:57.9%}
+.nbm-vflower .v6{left:1.6%;top:22.1%}
+.nbm-vflower li>*{transform:translate(var(--dx,0),var(--dy,0))}
+.nbm-vflower .v2{--dy:-4.5cqw}.nbm-vflower .v3{--dx:3.6cqw;--dy:-1.4cqw}.nbm-vflower .v4{--dx:2.6cqw;--dy:3.4cqw}.nbm-vflower .v5{--dx:-2.6cqw;--dy:3.4cqw}.nbm-vflower .v6{--dx:-3.4cqw;--dy:-1.4cqw}
+.nbm-vflower .v6 b{font-size:4cqw;letter-spacing:-.01em}
+.nbm-vflower .v2{background:#cfe0e3}
+.nbm-vflower .v1{background:#ead3cf}.nbm-vflower .v3{background:#d9d4e5}.nbm-vflower .v4{background:#d5dccb}.nbm-vflower .v5{background:#dde9e4}.nbm-vflower .v6{background:#eadfc9}
+.nbm-vflower .nbm-vcore{left:30%;top:30%;width:40%;mix-blend-mode:normal;z-index:2;background:#e8cbc5;box-shadow:0 0 0 1.4cqw #fff,0 10px 30px rgba(120,80,70,.18)}
+.nbm-vflower .nbm-vcore b{font-size:7.8cqw;color:#5b3b35}
+.nbm-vflower .nbm-vcore span{font-size:4.2cqw;color:#7a5750;font-weight:600}
+.nbm-vflower .nbm-vcore small{font-size:2.8cqw;letter-spacing:.12em;color:#8a6a62;margin-bottom:.4cqw}
+.nbm-vlist{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.nbm-vlist li{padding:.85rem 0 .85rem;border-top:1px solid var(--line)}
+.nbm-vlist li:last-child{border-bottom:1px solid var(--line)}
+.nbm-vlist h3{display:flex;align-items:center;gap:.55rem;font-size:var(--t-h4);margin:0 0 .3rem;font-weight:700}
+.nbm-vlist h3 i{width:12px;height:12px;border-radius:50%;flex:none}
+.nbm-vlist h3 em{font-style:normal;font-size:.75rem;font-weight:600;color:#7a5750;background:#f3e4e1;border-radius:99px;padding:.1rem .55rem}
+.nbm-vlist p{margin:0;padding-left:calc(12px + .55rem)}
+.nbm-vlist .ko{color:var(--ink);font-size:.97rem;line-height:1.6}
+.nbm-vlist .en{color:var(--muted);font-size:.88rem;font-style:italic;line-height:1.5}
+.nbm-vlist .nbm-vcore{background:#faf1ef;border-radius:10px;border-top-color:transparent;padding:1rem 1rem 1rem .9rem;margin-bottom:.5rem}
+.nbm-vlist .nbm-vcore+li{border-top:0}
+.nbm-vlist .nbm-vcore h3{font-size:1.15rem}
+.nbm-vlist .v1 i{background:#d9b2ab}.nbm-vlist .v2 i{background:#b3cbd0}.nbm-vlist .v3 i{background:#c3bbd6}.nbm-vlist .v4 i{background:#bcc7ae}.nbm-vlist .v5 i{background:#bcd3c9}.nbm-vlist .v6 i{background:#dccaa5}
+.nbm-vmo .m-say{white-space:pre-line}
+@media (max-width:760px){
+  .nbm-vwrap{grid-template-columns:1fr;justify-items:center;gap:8px}
+  .nbm-vflower{max-width:340px}
+}
