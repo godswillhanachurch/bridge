@@ -221,3 +221,34 @@ footer .wrap>.foot-partner,footer .wrap>.foot-mark{display:inline-block}
   .nbm-history li li{grid-template-columns:22px minmax(0,1fr);column-gap:.45rem}
   .msn .nbm-history li li span{font-size:.88rem!important}
 }
+
+/* 줄 간격·여백 정리: 교회 홈페이지 카드와 같은 밀도로 (2026-11-11) */
+.msn :is(.msn-goal,.msn-card,.msn-mini,.msn-4e li,.explore-card,.box) p,
+.msn :is(.msn-goal,.msn-card,.msn-mini,.msn-4e li,.explore-card,.box) li,
+.msn :is(.msn-mini,.msn-dl) dd{font-size:.92rem!important;line-height:1.65!important}
+.msn .sec-head p{line-height:1.65!important}
+.msn .msn-lead{line-height:1.7!important}
+.msn .msn-vision-text{line-height:1.5!important}
+.msn-vision{padding-bottom:clamp(24px,3vw,36px);margin-bottom:clamp(24px,3vw,36px)}
+.nbm-hope-box{margin:0 0 clamp(28px,4vw,44px);padding-bottom:clamp(24px,3vw,36px)}
+.nbm-hope-box .eyebrow{margin-bottom:.7rem}
+.nbm-hope>li{padding:clamp(18px,2vw,24px)}
+.nbm-hope svg{margin-bottom:.7rem;padding:11px}
+.msn .nbm-hope-ref{margin:.2rem 0 .6rem!important}
+.msn .nbm-hope p:last-child{font-size:.98rem!important;line-height:1.6;padding-top:.6rem}
+.msn-goals-head{margin-bottom:1.1rem!important}
+.nbm-vlist li{padding:.55rem 0}
+.nbm-vlist .nbm-vcore{padding:.75rem .9rem .75rem .8rem;margin-bottom:.3rem}
+.nbm-vlist h3{margin-bottom:.15rem;font-size:1rem}
+.nbm-vlist .nbm-vcore h3{font-size:1.08rem}
+.nbm-vlist .ko{font-size:.92rem;line-height:1.5}
+.nbm-vlist .en{font-size:.84rem;line-height:1.45}
+.nbm-history ul{gap:.55rem}
+@media (max-width:760px){
+  .msn-vision{padding-bottom:22px;margin-bottom:22px}
+}
+.msn .nbm-vlist .ko{font-size:.92rem!important;line-height:1.5!important}
+.msn .nbm-vlist .en{font-size:.84rem!important;line-height:1.45!important}
+.msn .nbm-vlist h3{line-height:1.35!important}
+.msn .nbm-hope p:last-child{line-height:1.6!important}
+.msn .nbm-vlist h3{font-size:1.02rem!important}.msn .nbm-vlist .nbm-vcore h3{font-size:1.1rem!important}
