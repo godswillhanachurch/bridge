@@ -18,3 +18,18 @@
     box.closest('.nbm-up-wrap').hidden=false;
   }).catch(function(){});
 })();
+
+// 걸어온 길: 휴대폰에서는 연도를 누르면 그해 내용이 펼쳐집니다.
+(function(){
+  var ol=document.querySelector('.nbm-history'); if(!ol) return;
+  ol.querySelectorAll(':scope>li').forEach(function(li){
+    var n=li.querySelectorAll('ul>li').length, h=li.querySelector('.nbm-yhint');
+    if(h) h.textContent='주요 활동 '+n+'건';
+  });
+  ol.addEventListener('click',function(e){
+    var b=e.target.closest('.nbm-year button,.nbm-yhint'); if(!b) return;
+    var li=b.closest('.nbm-history>li'), on=!li.classList.contains('open');
+    li.classList.toggle('open',on);
+    li.querySelectorAll('[aria-expanded]').forEach(function(x){x.setAttribute('aria-expanded',on)});
+  });
+})();
