@@ -33,3 +33,18 @@
     li.querySelectorAll('[aria-expanded]').forEach(function(x){x.setAttribute('aria-expanded',on)});
   });
 })();
+
+// 우리의 가치: 영어 단어를 누르면 옆(휴대폰은 아래) 설명이 바뀝니다.
+(function(){
+  var fl=document.querySelector('.nbm-vflower'), pn=document.querySelector('.nbm-vpanel'); if(!fl||!pn) return;
+  fl.addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b) return;
+    fl.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+    pn.className='nbm-vpanel '+b.parentNode.className.split(' ')[0];
+    pn.querySelector('.nbm-vp-k').textContent=b.getAttribute('data-k')+(b.parentNode.classList.contains('nbm-vcore')?' · 중심 가치':'');
+    pn.querySelector('.nbm-vp-e').textContent=b.querySelector('b').textContent;
+    pn.querySelector('.nbm-vp-ko').textContent=b.getAttribute('data-ko');
+    pn.querySelector('.nbm-vp-en').textContent=b.getAttribute('data-en');
+    pn.classList.remove('flash'); void pn.offsetWidth; pn.classList.add('flash');
+  });
+})();

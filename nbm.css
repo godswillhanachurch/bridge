@@ -252,3 +252,28 @@ footer .wrap>.foot-partner,footer .wrap>.foot-mark{display:inline-block}
 .msn .nbm-vlist h3{line-height:1.35!important}
 .msn .nbm-hope p:last-child{line-height:1.6!important}
 .msn .nbm-vlist h3{font-size:1.02rem!important}.msn .nbm-vlist .nbm-vcore h3{font-size:1.1rem!important}
+/* 우리의 가치: 영어 단어 누르면 설명 (2026-11-11) */
+.nbm-vflower li>button{all:unset;box-sizing:border-box;width:100%;height:100%;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;transition:box-shadow .2s,transform .2s}
+.nbm-vflower li>button>*{transform:translate(var(--dx,0),var(--dy,0))}
+.nbm-vflower li>*{transform:none}
+.nbm-vflower li>button:hover b{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.nbm-vflower li>button:focus-visible{outline:2px solid var(--pine);outline-offset:3px}
+.nbm-vflower li:not(.nbm-vcore)>button[aria-pressed="true"]{box-shadow:inset 0 0 0 .9cqw rgba(30,35,38,.35)}
+.nbm-vflower .nbm-vcore>button[aria-pressed="true"]{box-shadow:inset 0 0 0 .9cqw rgba(91,59,53,.35)}
+.nbm-vflower li:not(.nbm-vcore) b{font-size:5.4cqw}
+.nbm-vflower .v6 b{font-size:4.4cqw!important}
+.nbm-vtip{text-align:center;font-size:.85rem!important;color:var(--muted);margin:.6rem 0 0!important}
+.nbm-vpanel{position:relative;background:#fff;border:1px solid var(--line);border-radius:14px;padding:clamp(24px,3vw,36px);box-shadow:0 6px 20px rgba(34,48,58,.06);overflow:hidden;--pc:#d9b2ab;--pb:#faf1ef}
+.nbm-vpanel::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--pc)}
+.nbm-vpanel.v1{--pc:#d9b2ab}.nbm-vpanel.v2{--pc:#b3cbd0}.nbm-vpanel.v3{--pc:#c3bbd6}.nbm-vpanel.v4{--pc:#bcc7ae}.nbm-vpanel.v5{--pc:#bcd3c9}.nbm-vpanel.v6{--pc:#dccaa5}
+.msn .nbm-vp-k{font-size:.85rem!important;font-weight:700;color:#8a7140!important;margin:0!important;letter-spacing:.02em}
+.nbm-vp-e{font-family:var(--f-serif);font-size:clamp(1.9rem,3vw,2.5rem);margin:.15rem 0 1rem;line-height:1.2;color:var(--ink)}
+.msn .nbm-vp-ko{font-size:1.08rem!important;line-height:1.6!important;color:var(--ink);margin:0 0 .35rem!important}
+.msn .nbm-vp-en{font-size:.95rem!important;line-height:1.5!important;font-style:italic;color:var(--muted);margin:0!important}
+.nbm-vpanel.flash>*{animation:nbmIn .35s ease}
+@keyframes nbmIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media (max-width:760px){
+  .nbm-vleft{width:100%;display:flex;flex-direction:column;align-items:center}
+  .nbm-vpanel{width:100%;margin-top:14px}
+}
+.msn .nbm-vp-e{font-size:clamp(1.9rem,3vw,2.5rem)!important;margin:.15rem 0 .9rem!important;line-height:1.2!important}.nbm-vflower .v6 b{font-size:4cqw!important}
