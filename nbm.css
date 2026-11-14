@@ -416,3 +416,8 @@ main>section:not(.slider):not(.vision){padding-block:var(--sec-pad)!important}
 @media (max-width:760px){.nbm-sched{grid-template-columns:1fr}}
 .nbm-special li.nbm-none{border:0!important}
 .nbm-cal-note{font-size:.88rem!important;color:var(--muted);margin:.8rem 0 0!important}
+
+/* 첫 화면 사역 안내: 연합사역·다음세대 사역을 한 상자에 두 줄로 (2026-11-14) */
+.worship-times .time.nbm-pair-box{display:grid!important;gap:.45rem;padding:.75rem 1.1rem}
+.worship-times .nbm-pair-box p{display:flex;align-items:baseline;gap:.8rem;margin:0!important}
+.worship-times .nbm-pair-box p+p{padding-top:.45rem;border-top:1px solid var(--line)}
