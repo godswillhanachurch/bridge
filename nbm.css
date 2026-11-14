@@ -79,8 +79,8 @@ body{background:var(--bg)}
 .nbm-habits h3 small{font-family:var(--f-serif);font-weight:400;font-size:.95rem;color:#8a7140;margin-left:.4rem}
 .msn .nbm-habits>p{color:var(--muted)}
 .nbm-habits ol{margin:.4rem 0 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;counter-reset:h}
-.nbm-habits ol li{counter-increment:h;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem;font-weight:600}
-.nbm-habits ol li::before{content:counter(h);display:block;font-family:var(--f-serif);color:var(--pine);font-size:1.3rem;margin-bottom:.3rem}
+.nbm-habits ol li{counter-increment:h;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem;font-weight:600;display:flex;align-items:baseline;gap:.6rem}
+.nbm-habits ol li::before{content:counter(h);flex:none;font-family:var(--f-serif);color:var(--pine);font-size:1.3rem;line-height:1}
 .msn-steps b small{display:block;font-family:var(--f-body,inherit);font-size:.75rem;color:var(--muted);font-weight:500}
 .nbm-meet{margin-top:0!important}
 
