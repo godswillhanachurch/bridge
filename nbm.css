@@ -423,3 +423,6 @@ main>section:not(.slider):not(.vision){padding-block:var(--sec-pad)!important}
 .worship-times .nbm-pair-box p+p{padding-top:.45rem;border-top:1px solid var(--line)}
 .worship-times .nbm-up-next{border-top:0!important;padding-top:0!important;margin-top:-.2rem}
 .nbm-week .nbm-week-head{margin-bottom:clamp(16px,2vw,24px)!important}.nbm-week .latest-meta{margin-top:.3rem!important}
+/* 연합 사역·다음세대 사역 상자: 두 단어를 한 줄로 (2026-11-14) */
+.worship-times .time.nbm-pair-box{display:flex!important;align-items:baseline;gap:0;padding:.65rem 1.1rem}
+.worship-times .nbm-pair-box p+p{padding-top:0;border-top:0;margin-left:.9rem!important;padding-left:.9rem;border-left:1px solid var(--line)}
