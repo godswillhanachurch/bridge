@@ -67,3 +67,4 @@
 - 작업 환경에서 godswillhana.org·bridge.godswillhana.org에 직접 접속이 안 될 수 있습니다. 로컬 확인은 Playwright로 `https://godswillhana.org/**` 요청을 교회 저장소 로컬 파일로 연결해서 봅니다.
 - 이 파일(CLAUDE.md)은 _config.yml에서 게시 대상에서 뺐습니다.
 - 섹션 위아래 여백은 nbm.css에서 --sec-pad를 clamp(40px,4.5vw,60px)로 줄여 씀(교회보다 촘촘, 2026-11-14).
+- 4E 프로세스 문구·휴대폰 모양(더보기로 접기)은 교회 nk.html과 똑같이 맞춤(2026-11-14): 만남 · 필요를 살핌 · 관계 맺기 · 동역하기. 교회 쪽 4E를 바꾸면 여기도 함께 바꿀 것.

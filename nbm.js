@@ -59,3 +59,15 @@
       var n=tabs[(i+d+tabs.length)%tabs.length]; sel(n); n.focus();});});
   if(location.hash==='#alb-event') sel(tabs[1]);
 })();
+
+// 4E 프로세스: 휴대폰에서는 설명을 접어 두고 '더보기'로 펼칩니다 (교회 북한선교 페이지와 같게)
+(function(){
+  document.querySelectorAll('.msn-4e>li').forEach(function(li,i){
+    var d=li.querySelector('p:last-child'); if(!d) return;
+    d.id='e4d'+(i+1);
+    var b=document.createElement('button'); b.type='button'; b.className='msn-4e-more'; b.textContent='더보기';
+    b.setAttribute('aria-expanded','false'); b.setAttribute('aria-controls',d.id);
+    b.addEventListener('click',function(){ var on=!li.classList.contains('open'); li.classList.toggle('open',on); b.setAttribute('aria-expanded',on); b.textContent=on?'접기':'더보기'; });
+    li.insertBefore(b,d);
+  });
+})();
