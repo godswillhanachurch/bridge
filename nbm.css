@@ -333,3 +333,14 @@ footer .wrap>.foot-partner,footer .wrap>.foot-mark{display:inline-block}
 .nbm-hope-box .msn-goals-head h2,.msn-goals-head h2{margin:0!important}
 .msn .nbm-hope p:last-child,.nbm-hope p:last-child{font-family:var(--f-body)!important;font-size:1rem!important;line-height:1.65!important;color:var(--ink)}
 @media (max-width:760px){.msn-goals.msn-pc:has(>.nbm-goals){display:none!important}}
+
+/* 첫 화면 '이번 주 사역': 교회 홈 설교 칸 배치(subgrid 등)를 덮어씀 (2026-11-14) */
+.nbm-week .row-grid{grid-template-columns:minmax(0,2fr) minmax(0,1fr)!important;grid-template-rows:none!important;column-gap:48px!important;row-gap:var(--gap-block,40px)!important;align-items:start}
+.nbm-week .row-grid>.latest{grid-row:auto!important;display:grid!important;grid-template-rows:none!important;grid-template-columns:minmax(0,1fr)!important;gap:.7rem;align-content:start;min-width:0}
+.nbm-week .row-grid>.latest>*{grid-column:1/-1!important;grid-row:auto!important;justify-self:start}
+.nbm-week .row-grid>.latest>.thumb{justify-self:stretch}
+.nbm-week .latest-title{margin:.5rem 0 0!important}
+.nbm-week .latest-meta{margin:0!important}
+.nbm-week .latest-btns{margin:.3rem 0 0!important}
+@media (max-width:1000px){.nbm-week .row-grid{column-gap:24px!important}}
+@media (max-width:760px){.nbm-week .row-grid{grid-template-columns:minmax(0,1fr)!important}}
