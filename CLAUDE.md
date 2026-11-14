@@ -20,19 +20,22 @@
 - 서로 오가는 링크: 이 사이트 메뉴바의 "높은뜻 하나되는 교회" 버튼(.nav-church, 같은 탭) ↔ 교회 nk.html(북한선교)의 "뉴포트 브릿지 미니스트리 홈페이지" 버튼과 목표 아래 안내 문장(→ about.html).
 - 통계: 같은 GoatCounter 계정(godswillhanachurch.goatcounter.com)에 경로 앞 "bridge"를 붙여 집계합니다.
 
-## 파일
+## 파일 (2026-11-14 메뉴 재구성)
+메뉴: 환영합니다 · 비전과 가치 · 브릿지 사역 · 반찬나눔 · 동역하기 (홈 메뉴는 없음 — 로고가 홈 역할, 교회 사이트와 같음). 메뉴는 데스크톱·휴대폰 같은 nav 하나.
 | 파일 | 메뉴 | 내용 |
 |---|---|---|
-| index.html | 홈 | 배너 3장, 사역 안내 카드(매주 금요일 10시 반찬나눔 출발, 21가정 · 다대포 · 지사동, 다가오는 사역 일정, 연합사역, 다음세대 사역), 비전 띠, 둘러보기 카드, 후원 안내 |
-| about.html | 소개 | 연합 사역 소개, 비전 → 우리가 바라보는 것(카드 3장) → 우리의 목표, 가치 6가지(사랑 중심 꽃 모양, 영어 단어를 누르면 설명 카드가 바뀜), 걸어온 길(2020–2026, 연도 화살표, 휴대폰은 연도 누르면 주요 활동 펼침) |
-| ministry.html | 사역 | 현장 사역과 연합·다음세대 사역, 북향민 돌봄 사역 4E 프로세스, 나눔 이야기(음식 사진), 북향민 이해하기, 두 가지 만남 |
-| join.html | 함께하기 | 자원봉사·후원·소식 |
+| index.html | (로고) | 배너 3장, 이번 주 사역(#week, 버튼 → banchan.html), 비전 띠, 둘러보기 카드 4개, 후원 안내 |
+| welcome.html | 환영합니다 | 첫 화면 소개, 인사말(#greeting)·섬기는 사람들(#people)은 '준비 중' 상자(.nbm-soon) — 사용자가 인사말·조직 소개를 주면 바꿔 넣음, 둘러보기 카드 |
+| about.html | 비전과 가치 | 연합 사역 소개, 비전 → 우리가 바라보는 것 → 우리의 목표, 가치 6가지(꽃 모양), 걸어온 길(2020–2026) |
+| ministry.html | 브릿지 사역 | 첫 화면 "돌봄이 동역이 되기까지", 돌봄 묶음(.nbm-care: 4E #steps → 두 가지 만남 #meeting → 북향민 이해하기 #understand, 같은 바탕에 가는 선), 연합사역·다음세대 사역(#partner) |
+| banchan.html | 반찬나눔 | 첫 화면 "찾아가고, 기도하며, 함께 세워 갑니다", 필드사역(#ministries), 나눔 이야기 앨범(#story) |
+| join.html | 동역하기 | 사역 일정(#schedule: 매주 정기 사역 + 다가오는 특별 일정 #nbmSpecial, 교회 events.json에서 사역 관련만), 참여와 후원(#join, 후원 카드 #give) |
 - msn.css: 교회 사이트의 선교 페이지 스타일 복사본 + 4E 카드(.msn-4e). 교회 쪽 선교 스타일을 바꾸면 여기도 맞춥니다.
 - nbm.css: NBM 전용(헤더 엠블럼, 배너, 걸어온 길 타임라인, 갤러리 등). nbm.js: 다가오는 사역 일정.
 - images/: mission-nk.jpg, vision-bg.jpg, korea-map.png, nbm-*.jpg(반찬·음식 사진), slide-banchan.png(배너 2 콜라주), slide-korea.png(배너 3 한반도·다리 그림).
 - 이 사이트에는 서비스워커가 없어 교회처럼 sw.js 버전을 올릴 필요는 없습니다. 휴대폰에 바로 반영되지 않을 때는 msn.css·nbm.css·nbm.js 링크에 `?v=날짜`를 붙입니다.
 
-## 나눔 이야기 앨범 (ministry.html #story, 2026-11-14)
+## 나눔 이야기 앨범 (banchan.html #story, 2026-11-14)
 - 두 칸 나란히(.nbm-alb-two): 반찬나눔(#alb-banchan, 매주 금요일 업데이트) / 식사초대 · 행사(#alb-event). 각 칸 첫 앨범은 크게, 그다음 앨범들은 아래에 작은 사진으로 쌓임.
 - 앨범 카드는 교회 news.html "행사 앨범"과 같은 틀: `button.album-card` + `data-title` + `data-photos`(JSON: [{"src","cap"}]), 표지 `.album-img img` + `.album-count`("사진 N장"), `.album-meta b`(이름) + `time`(날짜). 사진 보기 화면(#albumViewer)은 교회 site.js가 처리.
 - 새 앨범은 각 칸의 `<!-- … 새 앨범은 이 줄 바로 아래 맨 앞에 넣습니다 -->` 다음, ul.album-grid 맨 앞에 넣음. 반찬나눔 이름은 "M월 D일 반찬나눔", time은 "YYYY. M. D".

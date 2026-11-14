@@ -145,7 +145,7 @@ footer .wrap>.foot-partner,footer .wrap>.foot-mark{display:inline-block}
 .nbm-up time{flex-shrink:0;min-width:5.6em;font-weight:700;font-variant-numeric:tabular-nums;color:var(--pine)}
 .nbm-up span small{display:block;color:var(--muted);font-size:.85rem}
 .foot-logos{display:flex;align-items:center;gap:14px;margin-bottom:.6rem}.foot-logos .foot-mark{margin:0}.foot-partner{margin:0}.foot-partner img{width:56px;height:56px}.foot-logos .foot-mark svg{width:56px;height:56px}
-@media (min-width:761px){#explore .explore-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media (min-width:1061px){#explore .explore-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}}
 /* 메뉴바: 높은뜻 하나되는 교회 바로가기 */
 .side-nav a.nav-church{border:1px solid var(--line);border-radius:999px;padding-inline:.85rem!important;margin-left:.4rem;color:var(--pine)!important;white-space:nowrap}
 .side-nav a.nav-church:hover{background:#dde9e4;border-color:#dde9e4}
@@ -396,3 +396,22 @@ main>section:not(.slider):not(.vision){padding-block:var(--sec-pad)!important}
   :root body main.msn .msn-4e li>p:last-child{font-size:15px!important;line-height:1.6!important}
   .msn #steps .sec-head{margin-bottom:14px}
 }
+
+/* 메뉴 재구성(2026-11-14): 환영합니다 준비 중 상자, 동역하기 일정표, 브릿지 사역 돌봄 묶음 */
+.nbm-soon{background:var(--surface,#fff);border:1px dashed var(--line);border-radius:14px;padding:clamp(22px,3vw,32px);text-align:center;color:var(--muted)}
+.msn .nbm-soon p{margin:0!important;color:var(--muted)}
+.nbm-sched{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:clamp(14px,2vw,24px);align-items:start}
+.nbm-sched-box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:clamp(20px,2.4vw,28px)}
+.nbm-sched-box h3{margin:0 0 .9rem!important;padding-bottom:.6rem;border-bottom:2px solid var(--pine)}
+.nbm-weekly,.nbm-special{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
+.nbm-weekly li,.nbm-special li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:.9rem;align-items:baseline;padding:.65rem .9rem;border-radius:10px;background:#f3f5f6}
+.nbm-weekly b,.nbm-special time{font-weight:700;color:var(--pine);white-space:nowrap}
+.nbm-weekly span,.nbm-special span{font-weight:600;color:var(--ink)}
+.nbm-weekly small,.nbm-special small{display:block;font-weight:400;color:var(--muted);font-size:.85rem;margin-top:.15rem}
+.nbm-special li.nbm-none{display:block;background:none;padding:.3rem 0;color:var(--muted);font-weight:400}
+.nbm-care-first{padding-bottom:clamp(20px,2.5vw,32px)!important}
+.nbm-care+.nbm-care{padding-top:clamp(20px,2.5vw,32px)!important;border-top:0}
+.nbm-care+.nbm-care .wrap{border-top:1px solid var(--line);padding-top:clamp(20px,2.5vw,32px)}
+.nbm-care:not(.nbm-care-last){padding-bottom:clamp(20px,2.5vw,32px)!important}
+@media (max-width:760px){.nbm-sched{grid-template-columns:1fr}}
+.nbm-special li.nbm-none{border:0!important}

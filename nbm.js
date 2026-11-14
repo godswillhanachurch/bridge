@@ -71,3 +71,20 @@
     li.insertBefore(b,d);
   });
 })();
+
+// 동역하기: 다가오는 특별 일정(매주 일정 제외) — 교회 events.json에서 사역 관련만
+(function(){
+  var box=document.getElementById('nbmSpecial'); if(!box||!window.fetch) return;
+  var WD=['일','월','화','수','목','금','토'], RX=/북향민|탈북민|반찬|아웃리치|브릿지|호스팅|게더링|NK|드림빌더/;
+  function parse(s){var p=s.split('-');return new Date(+p[0],+p[1]-1,+p[2])}
+  function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  fetch('https://godswillhana.org/events.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(data){
+    var today=new Date();today.setHours(0,0,0,0);
+    var out=(data.events||[]).filter(function(e){return !e.pin&&(e.kind==='ministry'||RX.test(e.title||''))&&(e.end?parse(e.end):parse(e.date))>=today})
+      .sort(function(a,b){return parse(a.date)-parse(b.date)}).slice(0,6);
+    if(!out.length) return;
+    box.innerHTML=out.map(function(e){var a=parse(e.date),b=e.end?parse(e.end):null;
+      var d=(a.getMonth()+1)+'.'+a.getDate()+' ('+WD[a.getDay()]+')'+(b?' ~ '+(b.getMonth()+1)+'.'+b.getDate():'');
+      return '<li><time>'+d+'</time><span>'+(e.time?esc(e.time)+' · ':'')+esc(e.title)+(e.note?'<small>'+esc(e.note)+'</small>':'')+'</span></li>'}).join('');
+  }).catch(function(){});
+})();
