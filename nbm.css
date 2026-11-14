@@ -421,3 +421,4 @@ main>section:not(.slider):not(.vision){padding-block:var(--sec-pad)!important}
 .worship-times .time.nbm-pair-box{display:grid!important;gap:.45rem;padding:.75rem 1.1rem}
 .worship-times .nbm-pair-box p{display:flex;align-items:baseline;gap:.8rem;margin:0!important}
 .worship-times .nbm-pair-box p+p{padding-top:.45rem;border-top:1px solid var(--line)}
+.worship-times .nbm-up-next{border-top:0!important;padding-top:0!important;margin-top:-.2rem}
