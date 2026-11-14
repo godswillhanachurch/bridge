@@ -357,3 +357,4 @@ footer .wrap>.foot-partner,footer .wrap>.foot-mark{display:inline-block}
 .nbm-alb .album-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
 @media (max-width:1000px){.nbm-alb .album-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:640px){.nbm-alb .album-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 10px}.nbm-alb .album-meta b{font-size:.95rem!important}.nbm-alb-tabs button{padding:.6rem .7rem;font-size:.95rem}}
+#partner .msn-pair:first-child{margin-top:0}
