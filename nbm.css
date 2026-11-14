@@ -426,3 +426,10 @@ main>section:not(.slider):not(.vision){padding-block:var(--sec-pad)!important}
 /* 연합 사역·다음세대 사역 상자: 두 단어를 한 줄로 (2026-11-14) */
 .worship-times .time.nbm-pair-box{display:flex!important;align-items:baseline;gap:0;padding:.65rem 1.1rem}
 .worship-times .nbm-pair-box p+p{padding-top:0;border-top:0;margin-left:.9rem!important;padding-left:.9rem;border-left:1px solid var(--line)}
+.worship-times .nbm-pair-box p{gap:.4rem!important;white-space:nowrap}
+.worship-times .nbm-pair-box p span{font-size:.85rem!important;color:var(--muted)}
+.worship-times .time.nbm-pair-box{flex-wrap:wrap;row-gap:.3rem}
+.worship-times .time.nbm-pair-box{padding:.65rem .9rem;flex-wrap:nowrap;min-width:0}
+.worship-times .nbm-pair-box p{min-width:0;gap:.35rem!important}
+.worship-times .nbm-pair-box p+p{margin-left:.6rem!important;padding-left:.6rem}
+.worship-times .nbm-pair-box p span{font-size:.8rem!important;letter-spacing:-.02em}
