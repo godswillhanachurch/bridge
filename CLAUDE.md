@@ -33,7 +33,7 @@
 - 이 사이트에는 서비스워커가 없어 교회처럼 sw.js 버전을 올릴 필요는 없습니다. 휴대폰에 바로 반영되지 않을 때는 msn.css·nbm.css·nbm.js 링크에 `?v=날짜`를 붙입니다.
 
 ## 나눔 이야기 앨범 (ministry.html #story, 2026-11-14)
-- 탭 두 개: 반찬나눔(#alb-banchan, 매주 금요일 업데이트) / 식사초대 · 행사(#alb-event). 탭 처리는 nbm.js.
+- 두 칸 나란히(.nbm-alb-two): 반찬나눔(#alb-banchan, 매주 금요일 업데이트) / 식사초대 · 행사(#alb-event). 각 칸 첫 앨범은 크게, 그다음 앨범들은 아래에 작은 사진으로 쌓임.
 - 앨범 카드는 교회 news.html "행사 앨범"과 같은 틀: `button.album-card` + `data-title` + `data-photos`(JSON: [{"src","cap"}]), 표지 `.album-img img` + `.album-count`("사진 N장"), `.album-meta b`(이름) + `time`(날짜). 사진 보기 화면(#albumViewer)은 교회 site.js가 처리.
 - 새 앨범은 각 칸의 `<!-- … 새 앨범은 이 줄 바로 아래 맨 앞에 넣습니다 -->` 다음, ul.album-grid 맨 앞에 넣음. 반찬나눔 이름은 "M월 D일 반찬나눔", time은 "YYYY. M. D".
 - 사진은 images/album/ 아래에 폭 1280px 이하 jpg로 줄여 넣고, 얼굴 나온 북향민 사진은 넣지 않음.
@@ -66,3 +66,4 @@
 - GitHub Pages 설정(Enforce HTTPS 등)은 사용자가 직접 바꿉니다. 이 저장소에 올리려면 Claude GitHub App 접근 권한이 필요합니다.
 - 작업 환경에서 godswillhana.org·bridge.godswillhana.org에 직접 접속이 안 될 수 있습니다. 로컬 확인은 Playwright로 `https://godswillhana.org/**` 요청을 교회 저장소 로컬 파일로 연결해서 봅니다.
 - 이 파일(CLAUDE.md)은 _config.yml에서 게시 대상에서 뺐습니다.
+- 섹션 위아래 여백은 nbm.css에서 --sec-pad를 clamp(40px,4.5vw,60px)로 줄여 씀(교회보다 촘촘, 2026-11-14).

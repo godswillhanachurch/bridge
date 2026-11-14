@@ -358,3 +358,26 @@ footer .wrap>.foot-partner,footer .wrap>.foot-mark{display:inline-block}
 @media (max-width:1000px){.nbm-alb .album-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:640px){.nbm-alb .album-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 10px}.nbm-alb .album-meta b{font-size:.95rem!important}.nbm-alb-tabs button{padding:.6rem .7rem;font-size:.95rem}}
 #partner .msn-pair:first-child{margin-top:0}
+
+/* 나눔 이야기: 두 칸을 나란히 한 번에 (2026-11-14) */
+.nbm-alb-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,3vw,40px);align-items:start}
+.nbm-alb-h{display:flex;align-items:baseline;gap:.5rem;margin:0 0 .3rem!important;font-size:var(--t-h4)!important;padding-bottom:.6rem;border-bottom:2px solid var(--pine)}
+.nbm-alb-h small{font-family:var(--f-body);font-size:.8rem;font-weight:600;color:#8a7140}
+.nbm-alb .album-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:14px 12px}
+.nbm-alb .album-grid>li:first-child{grid-column:1/-1}
+.nbm-alb .album-grid>li:first-child .album-meta b{font-size:var(--t-h4)!important}
+.nbm-alb .album-grid>li:not(:first-child) .album-meta b{font-size:.88rem!important}
+.nbm-alb .album-grid>li:not(:first-child) .album-count{display:none}
+@media (max-width:640px){
+  .nbm-alb-two{gap:12px}
+  .nbm-alb-h{font-size:1rem!important;flex-wrap:wrap;row-gap:0}
+  .nbm-alb-lead{display:none}
+  .nbm-alb .album-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px 8px;margin-top:.7rem}
+  .nbm-alb .album-grid>li:first-child .album-meta b{font-size:.92rem!important}
+  .nbm-alb .album-count{font-size:.7rem!important;padding:.1rem .45rem}
+}
+
+/* 섹션 위아래 여백 줄이기 — 브릿지 전체 (2026-11-14) */
+:root{--sec-pad:clamp(40px,4.5vw,60px)}
+main>section:not(.slider):not(.vision){padding-block:var(--sec-pad)!important}
+.msn .sec-head{margin-bottom:clamp(18px,2.4vw,26px)!important}
