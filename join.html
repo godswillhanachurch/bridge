@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
 <link rel="stylesheet" href="https://godswillhana.org/style.css?v=20261112y">
 <link rel="stylesheet" href="msn.css">
-<link rel="stylesheet" href="nbm.css?v=20261114g">
+<link rel="stylesheet" href="nbm.css?v=20261114h">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#f7f6f2">
 <meta property="og:title" content="동역하기 | New Port Bridge Ministry">
@@ -69,18 +69,16 @@
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">사역 일정</p>
-        <h2>이번 달, 함께할 자리</h2>
+        <h2>함께할 자리를 확인하세요</h2>
         <p>매주 이어지는 사역과 다가오는 특별 일정입니다. 일정은 높은뜻 하나되는 교회 일정표와 함께 갱신됩니다.</p>
       </div>
-      <div class="nbm-sched">
-        <div class="nbm-sched-box">
-          <h3>매주 정기 사역</h3>
-          <ul class="nbm-weekly"><li><b>금요일 10:00</b><span>반찬나눔 출발<small>교회 사무실에서 출발 · 오후 2시쯤 마침 · 다대포 · 지사동 21가정</small></span></li></ul>
+      <div class="cal-wrap nbm-cal" id="calendar">
+        <div class="album-head">
+          <h3 class="bul-title">사역 일정표</h3>
+          <p class="cal-legend"><span><i class="k-ministry"></i>사역</span><span><i class="k-special"></i>특별 일정</span></p>
         </div>
-        <div class="nbm-sched-box">
-          <h3>다가오는 특별 일정</h3>
-          <ul class="nbm-up nbm-special" id="nbmSpecial"><li class="nbm-none">지금 잡힌 특별 일정이 없습니다. 새 일정이 생기면 이곳에 올립니다.</li></ul>
-        </div>
+        <div class="cal" id="churchCal" data-src="https://godswillhana.org/events.json" data-only="ministry"><p class="cal-none">일정을 불러오는 중…</p></div>
+        <p class="nbm-cal-note">매주 금요일 반찬나눔은 오전 10시 교회 사무실에서 출발해 오후 2시쯤 마칩니다.</p>
       </div>
     </div>
   </section>
@@ -124,6 +122,7 @@
   <a href="join.html#give">후원 안내</a>
 </nav>
 <script src="https://godswillhana.org/site.js"></script>
+<script src="https://godswillhana.org/cal.js?v=20261114b" defer></script>
 <script src="nbm.js?v=20261114g"></script>
 </body>
 </html>

@@ -29,7 +29,7 @@
 | about.html | 비전과 가치 | 연합 사역 소개, 비전 → 우리가 바라보는 것 → 우리의 목표, 가치 6가지(꽃 모양), 걸어온 길(2020–2026) |
 | ministry.html | 브릿지 사역 | 첫 화면 "돌봄이 동역이 되기까지", 돌봄 묶음(.nbm-care: 4E #steps → 두 가지 만남 #meeting → 북향민 이해하기 #understand, 같은 바탕에 가는 선), 연합사역·다음세대 사역(#partner) |
 | banchan.html | 반찬나눔 | 첫 화면 "찾아가고, 기도하며, 함께 세워 갑니다", 필드사역(#ministries), 나눔 이야기 앨범(#story) |
-| join.html | 동역하기 | 사역 일정(#schedule: 매주 정기 사역 + 다가오는 특별 일정 #nbmSpecial, 교회 events.json에서 사역 관련만), 참여와 후원(#join, 후원 카드 #give) |
+| join.html | 동역하기 | 사역 일정(#schedule: 교회 cal.js 달력을 data-only="ministry"로 불러 브릿지 사역 일정만 표시, 일정은 교회 events.json에 넣음), 참여와 후원(#join, 후원 카드 #give) |
 - msn.css: 교회 사이트의 선교 페이지 스타일 복사본 + 4E 카드(.msn-4e). 교회 쪽 선교 스타일을 바꾸면 여기도 맞춥니다.
 - nbm.css: NBM 전용(헤더 엠블럼, 배너, 걸어온 길 타임라인, 갤러리 등). nbm.js: 다가오는 사역 일정.
 - images/: mission-nk.jpg, vision-bg.jpg, korea-map.png, nbm-*.jpg(반찬·음식 사진), slide-banchan.png(배너 2 콜라주), slide-korea.png(배너 3 한반도·다리 그림).

@@ -415,3 +415,4 @@ main>section:not(.slider):not(.vision){padding-block:var(--sec-pad)!important}
 .nbm-care:not(.nbm-care-last){padding-bottom:clamp(20px,2.5vw,32px)!important}
 @media (max-width:760px){.nbm-sched{grid-template-columns:1fr}}
 .nbm-special li.nbm-none{border:0!important}
+.nbm-cal-note{font-size:.88rem!important;color:var(--muted);margin:.8rem 0 0!important}
