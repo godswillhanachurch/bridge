@@ -32,6 +32,13 @@
 - images/: mission-nk.jpg, vision-bg.jpg, korea-map.png, nbm-*.jpg(반찬·음식 사진), slide-banchan.png(배너 2 콜라주), slide-korea.png(배너 3 한반도·다리 그림).
 - 이 사이트에는 서비스워커가 없어 교회처럼 sw.js 버전을 올릴 필요는 없습니다. 휴대폰에 바로 반영되지 않을 때는 msn.css·nbm.css·nbm.js 링크에 `?v=날짜`를 붙입니다.
 
+## 나눔 이야기 앨범 (ministry.html #story, 2026-11-14)
+- 탭 두 개: 반찬나눔(#alb-banchan, 매주 금요일 업데이트) / 식사초대 · 행사(#alb-event). 탭 처리는 nbm.js.
+- 앨범 카드는 교회 news.html "행사 앨범"과 같은 틀: `button.album-card` + `data-title` + `data-photos`(JSON: [{"src","cap"}]), 표지 `.album-img img` + `.album-count`("사진 N장"), `.album-meta b`(이름) + `time`(날짜). 사진 보기 화면(#albumViewer)은 교회 site.js가 처리.
+- 새 앨범은 각 칸의 `<!-- … 새 앨범은 이 줄 바로 아래 맨 앞에 넣습니다 -->` 다음, ul.album-grid 맨 앞에 넣음. 반찬나눔 이름은 "M월 D일 반찬나눔", time은 "YYYY. M. D".
+- 사진은 images/album/ 아래에 폭 1280px 이하 jpg로 줄여 넣고, 얼굴 나온 북향민 사진은 넣지 않음.
+- 지금 있는 앨범: "그동안의 반찬나눔"(사진 6장), "감사의 선물 나눔"(배·감 2장, 식사초대·행사 칸 — 사용자 확인 전 배치).
+
 ## 디자인
 - 글자 크기 통일(2026-11-12): 교회 style.css 끝과 이 저장소 nbm.css 끝에 같은 '글자 크기·글꼴 통일' 블록이 있습니다(본문 17 · 보조 15 · 꼬리표 13 · 카드 제목 고딕 19~22). 한쪽을 고치면 다른 쪽도 같이 고칩니다. 교회 style.css 링크에도 ?v=를 붙여 둠.
 - 교회 사이트와 같은 색·글꼴: 청회색 주 색, 옅은 민트 #dde9e4 띠, 세이지, 모래·금색 머리말, Pretendard + Gowun Batang.

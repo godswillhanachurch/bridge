@@ -48,3 +48,14 @@
     pn.classList.remove('flash'); void pn.offsetWidth; pn.classList.add('flash');
   });
 })();
+
+// 나눔 이야기: 반찬나눔 / 식사초대·행사 탭
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.nbm-alb-tabs [role=tab]')); if(!tabs.length) return;
+  function sel(t){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;
+    document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});}
+  tabs.forEach(function(t,i){t.addEventListener('click',function(){sel(t)});
+    t.addEventListener('keydown',function(e){var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0; if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length]; sel(n); n.focus();});});
+  if(location.hash==='#alb-event') sel(tabs[1]);
+})();

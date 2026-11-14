@@ -344,3 +344,16 @@ footer .wrap>.foot-partner,footer .wrap>.foot-mark{display:inline-block}
 .nbm-week .latest-btns{margin:.3rem 0 0!important}
 @media (max-width:1000px){.nbm-week .row-grid{column-gap:24px!important}}
 @media (max-width:760px){.nbm-week .row-grid{grid-template-columns:minmax(0,1fr)!important}}
+
+/* 나눔 이야기: 두 갈래 앨범 (2026-11-14) */
+.nbm-alb-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 1.2rem;border-bottom:1px solid var(--line)}
+.nbm-alb-tabs button{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:baseline;gap:.45rem;padding:.7rem 1.1rem;margin-bottom:-1px;border-bottom:3px solid transparent;font-weight:700;font-size:1.02rem;color:var(--muted)}
+.nbm-alb-tabs button small{font-size:.78rem;font-weight:600;color:#8a7140}
+.nbm-alb-tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--pine)}
+.nbm-alb-tabs button:hover{color:var(--ink)}
+.nbm-alb-tabs button:focus-visible{outline:2px solid var(--pine);outline-offset:2px;border-radius:4px}
+.nbm-alb{margin-top:0!important}
+.msn .nbm-alb-lead,.nbm-alb-lead{font-size:.95rem!important;color:var(--muted);margin:0 0 1rem!important}
+.nbm-alb .album-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:1000px){.nbm-alb .album-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:640px){.nbm-alb .album-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 10px}.nbm-alb .album-meta b{font-size:.95rem!important}.nbm-alb-tabs button{padding:.6rem .7rem;font-size:.95rem}}
