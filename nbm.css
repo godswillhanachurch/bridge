@@ -433,3 +433,4 @@ main>section:not(.slider):not(.vision){padding-block:var(--sec-pad)!important}
 .worship-times .nbm-pair-box p{min-width:0;gap:.35rem!important}
 .worship-times .nbm-pair-box p+p{margin-left:.6rem!important;padding-left:.6rem}
 .worship-times .nbm-pair-box p span{font-size:.8rem!important;letter-spacing:-.02em}
+.foot-partner.foot-plant img{width:auto!important;height:56px!important;mix-blend-mode:multiply}

@@ -14,7 +14,8 @@
   - `https://godswillhana.org/style.css` — 기본 디자인 전부
   - `https://godswillhana.org/site.js` — 메뉴, 헤더, 슬라이드, 모바일 키워드 버튼, 바닥글 방문 수
   - `https://godswillhana.org/events.json` — nbm.js가 읽어 홈의 "다가오는 사역 일정"(#nbmUp)을 채움 (kind가 ministry이거나 이름에 사역 관련 말이 든 일정, 매주 일정은 한 번만)
-  - `https://godswillhana.org/logo.svg` — 바닥글의 교회 로고
+  - `https://godswillhana.org/logo.svg` — 바닥글의 교회 로고(누르면 교회 홈페이지)
+- 바닥글 로고 3개(2026-11-15): 브릿지 엠블럼 · 높은뜻 하나되는 교회(링크) · 주가 그리시는 교회(images/plant-logo.png — 교회 저장소 plant-logo.png 여백만 잘라 복사, 홈페이지가 생기면 링크 추가)
 - 그래서 교회 style.css·site.js를 고치면 이 사이트도 바뀝니다. 교회 쪽을 고칠 때 이 사이트도 함께 확인합니다.
 - 일정을 바꾸려면 교회 저장소의 events.json을 고칩니다(이 저장소에는 일정 파일이 없음).
 - 서로 오가는 링크: 메뉴바의 "높은뜻 하나되는 교회" 버튼은 사용자 요청으로 뺐음(2026-11-14). 교회로 가는 길은 바닥글 교회 로고. 교회 nk.html(북한선교)에는 "뉴포트 브릿지 미니스트리 홈페이지" 버튼·목표 아래 안내 문장·NBM 홈페이지 버튼이 있음(2026-11-14 다시 열림).
