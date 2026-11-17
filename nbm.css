@@ -468,6 +468,13 @@ main>section:not(.slider):not(.vision){padding-block:var(--sec-pad)!important}
 :root body main .nbm-alb-tabs button{font-size:var(--t-body)!important}
 :root body main .nbm-alb-tabs button small{font-size:var(--t-xs)!important}
 /* 나눔 앨범: 교회 '행사 앨범'과 같은 모양 (2026-11-17) */
-.nbm-album .album-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.nbm-album .album-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
 .nbm-album .album-meta{display:flex;justify-content:space-between;align-items:baseline;gap:.5rem}
 @media (max-width:640px){.nbm-album .album-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){
+  .nbm-album .album-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important;overflow:visible!important;margin:0!important;padding:0!important}
+  .nbm-album .album-grid>li{min-width:0!important;width:auto!important;flex:none!important}
+  .nbm-album .album-img{aspect-ratio:4/3}
+  .nbm-album .album-meta{flex-direction:column;align-items:flex-start;gap:0}
+  .nbm-album .album-meta time{font-size:13px}
+}
