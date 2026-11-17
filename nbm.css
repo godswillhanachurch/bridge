@@ -467,3 +467,7 @@ main>section:not(.slider):not(.vision){padding-block:var(--sec-pad)!important}
 :root body main code{font-size:var(--t-body)!important}
 :root body main .nbm-alb-tabs button{font-size:var(--t-body)!important}
 :root body main .nbm-alb-tabs button small{font-size:var(--t-xs)!important}
+/* 나눔 앨범: 교회 '행사 앨범'과 같은 모양 (2026-11-17) */
+.nbm-album .album-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.nbm-album .album-meta{display:flex;justify-content:space-between;align-items:baseline;gap:.5rem}
+@media (max-width:640px){.nbm-album .album-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
