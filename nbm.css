@@ -478,3 +478,12 @@ main>section:not(.slider):not(.vision){padding-block:var(--sec-pad)!important}
   .nbm-album .album-meta{flex-direction:column;align-items:flex-start;gap:0}
   .nbm-album .album-meta time{font-size:13px}
 }
+/* 나눔 앨범: 교회 행사 앨범과 같은 화보형(.album-mag, 교회 style.css·site.js) — 반찬나눔 큰 칸 + 식사초대·행사 (2026-11-17) */
+.nbm-album .album-grid.album-mag{grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:clamp(12px,1.6vw,20px)!important}
+.nbm-album .album-mag .album-meta{flex-direction:column!important;align-items:flex-start!important;justify-content:flex-end;gap:.15rem!important}
+.nbm-album .album-mag .album-meta time{display:none}
+@media (max-width:760px){
+  .nbm-album .album-grid.album-mag{grid-template-columns:1fr 1fr!important;gap:10px!important}
+  .nbm-album .album-mag>li,.nbm-album .album-mag>li.album-big{grid-column:auto}
+  .nbm-album .album-mag .album-img{aspect-ratio:1/1!important}
+}

@@ -32,6 +32,7 @@
 | banchan.html | 반찬나눔이야기 | 첫 화면 "찾아가고, 기도하며, 함께 세워 갑니다", 필드사역(#ministries), 나눔 이야기 앨범(#story) |
 | join.html | 동역하기 | 사역 일정(#schedule: 교회 cal.js 달력을 data-only="ministry"로 불러 브릿지 사역 일정만 표시, 일정은 교회 events.json에 넣음), 참여와 후원(#join, 후원 카드 #give) |
 - msn.css: 교회 사이트의 선교 페이지 스타일 복사본 + 4E 카드(.msn-4e). 교회 쪽 선교 스타일을 바꾸면 여기도 맞춥니다.
+- 나눔 앨범(banchan.html #story, 2026-11-17): 교회 행사 앨범과 같은 화보형 — ul에 `album-grid album-mag`, 반찬나눔 li에 `album-big`. 모양·사진 자동 전환은 교회 style.css·site.js에 있음(교회 쪽을 고치면 여기도 바뀜). 제목 글꼴 고운돋움은 banchan.html에서 불러옴. nbm.css 끝에 이 앨범용 덧붙임.
 - nbm.css: NBM 전용(헤더 엠블럼, 배너, 걸어온 길 타임라인, 갤러리 등). nbm.js: 다가오는 사역 일정.
 - images/: mission-nk.jpg, vision-bg.jpg, korea-map.png, nbm-*.jpg(반찬·음식 사진), slide-banchan.png(배너 2 콜라주), slide-korea.png(배너 3 한반도·다리 그림).
 - 이 사이트에는 서비스워커가 없어 교회처럼 sw.js 버전을 올릴 필요는 없습니다. 휴대폰에 바로 반영되지 않을 때는 msn.css·nbm.css·nbm.js 링크에 `?v=날짜`를 붙입니다.
